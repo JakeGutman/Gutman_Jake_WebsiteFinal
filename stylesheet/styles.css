@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.bg-image {
+    height: 550px;
+    background-image: url("../images/lumpia\ shanghai.png");
+    background-size: cover;
+    background-position: center;
+}
+.pos-abs {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+.color-white {
+    color: white;
+}
+.color-red {
+    color: rgb(121, 19, 19);
+}
+.padded {
+    padding: 50px;
+}
+
+@media (max-width: 500px) {
+    .padded {
+        padding: 20px;
+    }
+}
+ h1, h2, h3, h4, h5, h6, a {
+    font-size: x-large;
+    font-family: "malaga", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+p {
+    font-size: x-large;
+}
+h1 {
+    font-size: xx-large;
+}
+.flex-container {
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(121, 19, 19);
+    padding: 30px 15px;
+    align-items: center;
+}
+.logo {
+    text-decoration: none;
+    color: white;
+    padding-left: 40px;
+    font-family: "cinema-script", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: xx-large;
+}
+.yellow-button {
+    background-color: #DEB568;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 15px
+
+}
+.white-button {
+    background-color: white;
+    color: rgb(121, 19, 19);
+    text-decoration: none;
+    padding: 10px;
+    margin: 15px
+}
+.links {
+    text-decoration: none;
+    color: white;
+    padding: 40px;
+}
+ .show-desktop {
+    display: none;
+}
+.show-mobile {
+    display: inline;
+}
+@media (min-width: 750px) {
+    .show-desktop {
+        display: block;
+    }
+    .show-mobile {
+    display: none;
+}
+}
+.center {
+    text-align: center;
+}
+.page-two {
+    background-color: rgb(121, 19, 19);
+}
+.page-three {
+    background-color: white;
+}
+.footer {
+    background-color: rgb(121, 19, 19);
+}
+.flex-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.flex {
+    display: flex;
+}
+.page-two .padded {
+    padding: 100px;
+}
+.page-two .margin {
+    margin: 75px;
+}
+.owners {
+    padding-top: 120px;
+    padding-right: 200px;
+}
+.tl-pad{
+    padding-left: 400px;
+    padding-top: 200px;
+}
+.margin-right {
+    margin-right: 100px;
+}
+.order {
+    background-color: rgb(121, 19, 19);
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+.flex {
+    display: flex;
+}
+.footer-buttons {
+    margin-left: 300px;
+    padding: 30px;
+}
+.socialmedia {
+    margin-left: 100px;
+    padding: 20px
+}
+.max-width {
+    height: auto;
+    max-width: 100%;
+}
+.justify-content {
+    justify-content: center;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.picture-pad {
+    padding: 60px;
+}
+.picture {
+    padding: 40px;
+}
+.pad {
+    padding: 130px;
+}
+hr.rounded {
+    border-top: 8px solid #DEB568;
+    border-radius: 5px;
+
+  }
+  
+
+  /* animations */
+  .fade--in, .fade--in-2 {
+    opacity: 0;
+  }
+  .fade--in.active, .fade--in-2.active {
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+.scale--up, .scale--up-2 {
+    transform: scale(0)
+}
+  .scale--up.active, .scale--up-2.active {
+    animation-name: scale-up;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  .fade {
+    opacity: 0;
+  }
+  .fade.active{
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
+  @keyframes scale-up {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    80% {
+        opacity: 1.2;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+  }
+  @keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
